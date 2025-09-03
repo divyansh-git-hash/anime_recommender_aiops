@@ -1,5 +1,5 @@
 .idea/
-.anime_recommendation_system.egg-info
+anime_recommendation_system.egg-info
 .env
 logs
 test.py
