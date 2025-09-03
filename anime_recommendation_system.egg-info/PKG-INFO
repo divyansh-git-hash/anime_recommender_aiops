@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: anime_recommendation_system
+Version: 0.0.1
+Author: divyansh
+Requires-Dist: langchain
+Requires-Dist: langchain_groq
+Requires-Dist: langchain-community
+Requires-Dist: chromadb
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: sentence-transformers
+Requires-Dist: langchain-huggingface
+Dynamic: author
+Dynamic: requires-dist

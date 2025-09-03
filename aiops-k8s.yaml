@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aiops-app
+  labels:
+    app: aiops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aiops
+  template:
+    metadata:
+      labels:
+        app: aiops
+    spec:
+      containers:
+        - name: aiops-container
+          image: aiops-app:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8501
+          envFrom:
+            - secretRef:
+                name: aiops-secret
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aiops-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: aiops
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8501

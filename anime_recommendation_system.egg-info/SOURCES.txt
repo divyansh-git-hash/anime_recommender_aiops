@@ -1,0 +1,13 @@
+setup.py
+anime_recommendation_system.egg-info/PKG-INFO
+anime_recommendation_system.egg-info/SOURCES.txt
+anime_recommendation_system.egg-info/dependency_links.txt
+anime_recommendation_system.egg-info/requires.txt
+anime_recommendation_system.egg-info/top_level.txt
+app/__init__.py
+config/__init__.py
+pipeline/__init__.py
+src/__init__.py
+src/utils/__init__.py
+src/utils/custom_exception.py
+src/utils/logger.py
